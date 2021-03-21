@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <main>
+    <div class="container mt-3">
+      <h1 class="h3 p-4 text-center">Are we going to Run?</h1>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="alert alert-info text-center js-result-alert"></div>
+
+          <form class="js-jogging-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form-group form-row align-items-center">
+              <label class="col-4 mb-0" for="temperature-input">Temperature</label>
+              <input class="form-control col-8 js-temperature-input" id="temperature-input" type="number" step="any" name="temperature" placeholder="25 C" required>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input js-is-raining-checkbox" type="checkbox" name="is-raining" id="is-raining-checkbox">
+              <label class="form-check-label" for="is-raining-checkbox">
+                is it raining?
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input js-is-gym-open-checkbox" type="checkbox" name="is-gym-open" id="is-gym-open-checkbox">
+              <label class="form-check-label" for="is-gym-open-checkbox">
+                is gym open?
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/running.js"></script>
+
+  <!-- SHARTNING O'ZGARUVCHIGA JAMLAB BERILISHI -->
+  <script>
+    var ieltsScore = 6;
+    var mathScore = 55;
+    var MINIMUM_IELTS_SCORE = 6;
+    var MINIMUM_MATH_SCORE = 40;
+
+    var isOkay = ieltsScore >= MINIMUM_IELTS_SCORE && mathScore >= MINIMUM_MATH_SCORE;
+
+    if (isOkay) {
+      console.log('Gazini bos, Jamshid');
+    } else {
+      console.log('TAMOM');
+    }
+  </script>
+</body>
+</html>
